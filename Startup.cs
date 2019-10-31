@@ -33,6 +33,11 @@ namespace EFOperation
 
             services.AddControllersWithViews();
 
+            //services.AddMvc(options =>
+            //{
+            //    options.Filters.Add();
+            //});
+
             services.AddHttpClient("github", c =>
             {
                 c.BaseAddress = new Uri("https://api.github.com/");
